@@ -37,6 +37,6 @@ def winner(board)
   if winning_combination
     board[combination[0]]
   else
-    false
-  end 
+    nil
+  end
 end
