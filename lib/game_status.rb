@@ -33,7 +33,10 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == true
-    return board[combination[0]]
-  end
+  winning_combination = won?(board)
+  if winning_combination
+    board[combination[0]]
+  else
+    false
+  end 
 end
